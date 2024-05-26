@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" th:href="@{css/site.css}">
+    <title>Catalogo</title>
+</head>
+<body>
+    <div id="backgroundIMG" th:style="'background-image: url(' + @{img/background-floral-pattern.png} + ');'">
+        <center><h1 style="margin: 30px;">CATÁLOGO</h1></center>
+        
+        <table>
+            <thead>
+                <tr>
+                    <td><b>NOME</b> </td>
+                    <td><b>DESCRICAO</b> </td>
+                    <td><b>PREÇO</b> </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="prod : ${lista}">
+                    <td th:text="${prod.name}"></td>
+                    <td th:text="${prod.description}"></td>
+                    <td th:text="${prod.price}"></td>
+
+                    <!--
+                    <td>
+                        <a th:href="@{'upd/' + ${cli.id}}">
+                            Editar
+                        </a>
+                    </td>
+                    <td> 
+                        <form th:action="@{'apagar/cliente/' + ${cli.id}}" method=post>
+                            <input type="submit" value="X">
+                        </form>
+                    </td>
+                    -->
+                   </tr>
+             </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

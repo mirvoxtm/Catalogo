@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+html, body {
+    font-family: "Cormorant SC", serif;
+    background-color: #FFF4E2;
+    margin: 0;
+}
+
+#backgroundIMG {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.center{
+    margin: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Ricky {
+    position: absolute;
+    background-color :black;
+    bottom:0px;
+    left: 0;
+    margin: 10px;
+}
+
+#Ricky:hover {
+    background-color: green;
+}
+
+button {
+    background-color: black;
+    font-family: "Cormorant SC", serif;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: black !important;
+}
+
+button:hover {
+    color: black !important;
+    background-color: whitesmoke !important;
+}
+
+a:link {
+    color: white
+}
+
+a:visited {
+    color: white;
+}

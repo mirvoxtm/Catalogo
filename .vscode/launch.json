@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CatalogoApplication<trabalhoPOO>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fatec.trabalhoPOO.CatalogoApplication",
+            "projectName": "trabalhoPOO",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

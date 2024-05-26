@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cadastro de categorias</title>
+</head>
+<body>
+    <div id="backgroundIMG" th:style="'background-image: url(' + @{img/background-floral-pattern.png} + ');'">
+        <form action="#" th:action="@{/cadastro-categoria}" method=post th:object="${category}">
+            Nome da categoria: <input type="text" th:field="*{name}"><br>
+            <input type="submit" value="Cadastrar Categoria">
+        </form>
+    </div>
+</body>
+</html>

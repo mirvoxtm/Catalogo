@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cadastro de produto</title>
+</head>
+<body>
+    <div id="backgroundIMG" th:style="'background-image: url(' + @{img/background-floral-pattern.png} + ');'">
+        <form action="#" th:action="@{/cadastro-produto}" method=post th:object="${produto}">
+            Nome: <input type="text" th:field="*{name}"><br>
+            Descrição: <input type="text" th:field="*{description}">
+            Preço: <input type="text" th:field="*{price}">
+            Categoria: <select th:field="*{categoryId}">
+                            <option th:each="cat : ${categories}" th:value="${cat.id}" th:text="${cat.name}"></option>
+                        </select>
+
+            <input type="submit" value="Cadastrar Produto">
+        </form>
+    </div>
+</body>
+</html>
