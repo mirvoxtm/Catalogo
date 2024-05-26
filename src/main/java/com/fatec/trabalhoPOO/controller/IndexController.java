@@ -47,6 +47,7 @@ public class IndexController {
         return "catalogo";
     }
     
+    //cadastro do produto
     @GetMapping("/cadastro-produto")
     public String cadastroProd(Model model) {
         List<Map<String, Object>> categories = categoryService.listarCategoria();
@@ -61,6 +62,7 @@ public class IndexController {
         return "redirect:/catalogo";
     }
 
+    //cadastro das categorias
     @GetMapping("/cadastro-categoria")
     public String cadastroCategoria(Model model) {
         model.addAttribute("category", new Category());
@@ -75,4 +77,9 @@ public class IndexController {
         return "redirect:/catalogo";
     } 
 
+    //login
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
 }
