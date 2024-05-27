@@ -7,8 +7,14 @@
 </head>
 <body>
     <div id="backgroundIMG" th:style="'background-image: url(' + @{img/background-floral-pattern.png} + ');'">
-        <center><h1 style="margin: 30px;">CATÁLOGO</h1></center>
-        
+        <center>
+            <ul class="menu">
+                <li><button><a th:href="@{/}"> Início </a></button></li>
+                <li><button><a th:href="@{/login}"> Login </a></button></li>
+            </ul>
+            <h1 style="margin: 30px;">CATÁLOGO</h1>
+        </center>
+
         <table>
             <thead>
                 <tr>
